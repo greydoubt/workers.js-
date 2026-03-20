@@ -1,6 +1,6 @@
 # workers.js-
 
-## Environment Variables (Cloudflare Workers)
+## Environment Variables (CF OpenWorkers.js Specification)
 
 Environment variables (called **bindings**) are passed as the `env` parameter.
 
@@ -13,6 +13,23 @@ export default {
     return new Response(apiKey);
   }
 };
+
+
+## 🔧 How to define **bindings** using static definition worker wrangler files
+
+In `wrangler.toml`:
+
+
+    ```toml id="cfw-env-3"
+
+    [vars]
+
+    API_KEY = "your-api-key"
+
+
+Or via CLI:
+
+    wrangler secret put API_KEY
 
 
 ## Assumed Minimal File System Structure
