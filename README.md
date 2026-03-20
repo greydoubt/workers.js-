@@ -1,5 +1,7 @@
 # workers.js-
 
+## Includes Full JavaScript Specification as javascript.js
+
 ## Environment Variables (CF OpenWorkers.js Specification)
 
 Environment variables (called **bindings**) are passed as the `env` parameter.
