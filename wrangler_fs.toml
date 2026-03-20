@@ -1,1 +1,7 @@
-
+toml id="cfw-env-3"
+[vars]
+# File System
+ROOT = "/"
+name = "kv-filesystem-demo"
+main = "worker.js"
+compatibility_date = "2026-03-19"
