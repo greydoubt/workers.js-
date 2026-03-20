@@ -20,7 +20,8 @@ export default {
 In `wrangler.toml`:
 
 
-    ```toml id="cfw-env-3"
+    ```
+    toml id="cfw-env-3"
 
     [vars]
 
@@ -29,7 +30,9 @@ In `wrangler.toml`:
 
 Or via CLI:
 
-    ```wrangler secret put API_KEY
+    ```
+    wrangler secret put API_KEY
+    ```
 
 
 ### Using TOML for File Subsystem (FOML)
@@ -127,13 +130,16 @@ wrangler kv:key put --binding=FILES "/data/config.json" '{ "theme": "dark" }'
 
 
 ## Filtering Files
+```
 files
   .filter(f => f !== 'workers.js' && f.endsWith('.js'))
   .sort()
   .forEach(file => {
     require(path.join(dir, file));});
+```
   
 ## Reading Files
+```
 fs.readdirSync(dir).forEach(file => {
   
       if (file === 'workers.js') return; // skip self
@@ -141,8 +147,10 @@ fs.readdirSync(dir).forEach(file => {
       if (path.extname(file) === '.js') {
             require(path.join(dir, file));
       }});
+```
 
 ## Reading and Executing Files
+```
 fs.readdirSyncAndExec(dir).forEach(file => {
       
       if (file === 'workers.js') return;
@@ -155,6 +163,7 @@ fs.readdirSyncAndExec(dir).forEach(file => {
     } else if (mod && typeof mod.run === 'function') {
       mod.run();
     }}});
+```
 
 
 ## Environment Variables
