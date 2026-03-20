@@ -1,3 +1,15 @@
 toml id="cfw-env-3"
 [vars]
 API_KEY = "your-api-key"
+
+name = "kv-filesystem-demo"
+main = "worker.js"
+compatibility_date = "2026-03-19"
+
+[[kv_namespaces]]
+binding = "FILES"
+id = "your_kv_namespace_id"
+
+[vars]
+# Optional defaults
+ROOT = "/"
