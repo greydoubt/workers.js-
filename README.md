@@ -32,6 +32,18 @@ Or via CLI:
     ```wrangler secret put API_KEY
 
 
+## Using TOML for File Subsystem (FOML)
+## Example KV structure (your “filesystem”)
+## Store keys as file paths:
+
+```/index.html        -> "<h1>Home</h1>"
+/about.html        -> "<h1>About</h1>"
+/blog/post-1.md    -> "# Post 1"
+/data/config.json  -> "{ \"theme\": \"dark\" }"
+```
+
+
+
 ## Assumed Minimal File System Structure
 
 /my-folder
