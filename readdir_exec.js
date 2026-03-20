@@ -1,4 +1,3 @@
-
 fs.readdirSyncAndExec(dir).forEach(file => {
   if (file === 'workers.js') return;
   if (file.endsWith('.js')) {
