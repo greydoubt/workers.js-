@@ -42,6 +42,48 @@ Or via CLI:
 /data/config.json  -> "{ \"theme\": \"dark\" }"
 ```
 
+## Worker Wrangler TOML File Rules
+```
+Use Wrangler env blocks (recommended)
+
+Instead of multiple files, you keep everything in one wrangler.toml:
+
+name = "app"
+main = "worker.js"
+compatibility_date = "2026-03-19"
+
+[vars]
+APP_NAME = "base-app"
+
+[env.staging.vars]
+APP_NAME = "staging-app"
+
+[env.production.vars]
+APP_NAME = "prod-app"
+
+✔ This is the official Wrangler way to avoid file splitting.
+```
+
+```
+✅ 2. Duplicate + override (simple approach)
+
+You manually split configs:
+
+wrangler.base.toml
+wrangler.staging.toml
+wrangler.prod.toml
+
+Then run:
+
+wrangler dev --config wrangler.staging.toml
+```
+
+## Populate Wranger TOML local file:
+```
+wrangler kv:key put --binding=FILES "/index.html" "<h1>Home</h1>"
+wrangler kv:key put --binding=FILES "/about.html" "<h1>About</h1>"
+wrangler kv:key put --binding=FILES "/data/config.json" '{ "theme": "dark" }'
+```
 
 
 ## Assumed Minimal File System Structure
