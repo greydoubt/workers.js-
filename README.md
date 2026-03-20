@@ -2,13 +2,13 @@
 
 /my-folder
 
-  workers.js
+    workers.js
   
-  a.js
+    a.js
   
-  b.js
+    b.js
   
-  c.js
+    c.js
 
 
 files
