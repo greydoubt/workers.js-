@@ -1,14 +1,33 @@
 # workers.js-
 
+
+
 /my-folder
 
+    dockers.js
+
+    borkers.js
+
+    forkers.js
+
+    porkers.js
+
+    porters.js
+
     workers.js
+
+    /subdir
+      
+        0a.js
   
-    a.js
+        1b.js
+        
   
-    b.js
+    0a.js
   
-    c.js
+    1b.js
+  
+    3c.js
 
 
 files
