@@ -1,0 +1,3 @@
+toml id="cfw-env-3"
+[vars]
+API_KEY = "your-api-key"
