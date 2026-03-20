@@ -13,7 +13,7 @@ export default {
     return new Response(apiKey);
   }
 };
-
+```
 
 ## 🔧 How to define **bindings** using static definition worker wrangler files
 
@@ -25,11 +25,11 @@ In `wrangler.toml`:
     [vars]
 
     API_KEY = "your-api-key"
-
+    ```
 
 Or via CLI:
 
-    wrangler secret put API_KEY
+    ```wrangler secret put API_KEY
 
 
 ## Assumed Minimal File System Structure
