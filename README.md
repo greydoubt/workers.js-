@@ -44,7 +44,7 @@ Or via CLI:
 ```/index.html        -> "<h1>Home</h1>"
 /about.html        -> "<h1>About</h1>"
 /blog/post-1.md    -> "# Post 1"
-/data/config.json  -> "{ \"theme\": \"dark\" }"
+/data/config.json  -> "{ \"theme\": \"dracula\" }"
 ```
 
 ## Worker Wrangler TOML File Rules
@@ -87,7 +87,7 @@ wrangler dev --config wrangler.staging.toml
 ```
 wrangler kv:key put --binding=FILES "/index.html" "<h1>Home</h1>"
 wrangler kv:key put --binding=FILES "/about.html" "<h1>About</h1>"
-wrangler kv:key put --binding=FILES "/data/config.json" '{ "theme": "dark" }'
+wrangler kv:key put --binding=FILES "/data/config.json" '{ "theme": "dracula" }'
 ```
 
 
