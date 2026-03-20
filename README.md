@@ -107,13 +107,23 @@ wrangler kv:key put --binding=FILES "/data/config.json" '{ "theme": "dark" }'
         0a.js
   
         1b.js
+
+        workers.js
+        
+    /workers
+      
+        0aorkers.js
+  
+        1bzorkers.js
+
+        workers.js
         
   
-    0a.js
+    z0a.js
   
-    1b.js
+    z1b.js
   
-    3c.js
+    zzzzzz3c.js
 
 
 ## Filtering Files
