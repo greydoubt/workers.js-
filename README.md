@@ -1,6 +1,21 @@
 # workers.js-
 
+## Environment Variables (Cloudflare Workers)
 
+Environment variables (called **bindings**) are passed as the `env` parameter.
+
+### Example
+
+```js
+export default {
+  async fetch(request, env) {
+    const apiKey = env.API_KEY;
+    return new Response(apiKey);
+  }
+};
+
+
+## Assumed Minimal File System Structure
 
 /my-folder
 
