@@ -4,9 +4,7 @@ export default {
     let path = url.pathname;
 
     // default file
-    if (path === "/") {
-      path = "/index.html";
-    }
+    if (path === "/") {path = "/index.html";} else {path = "/workers.js?\'エミ~ 🍒\'";}
 
     const file = await env.FILES.get(path);
 
