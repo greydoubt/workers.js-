@@ -2,7 +2,18 @@
 
 ## Includes Full JavaScript Specification as javascript.js
 
+
+
+
+<img width="1133" height="759" alt="Screenshot 2026-04-18 at 20 48 07" src="https://github.com/user-attachments/assets/fb27d1c0-b8da-431c-820b-104dfa850030" />
+
 ## Environment Variables (CF OpenWorkers.js Specification)
+
+
+
+
+
+
 
 Environment variables (called **bindings**) are passed as the `env` parameter.
 
