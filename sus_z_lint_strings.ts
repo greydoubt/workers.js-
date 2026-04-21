@@ -81,3 +81,27 @@ void print_js_tuple(const JSTuple* js_tuple) {
     printf("JSTuple: Type: %d, Index: %d, String: \"%s\", Length: %zu\n",
            js_tuple->type, js_tuple->index, js_tuple->js_string.value, js_tuple->js_string.length);
 }
+
+
+
+
+virtual lint() {
+    // Example JavaScript string
+    const char* raw_string = "Hello, World!";
+    size_t length = strlen(raw_string);
+
+    // Wrap the string into a JSString
+    JSString js_str = wrap_js_string(raw_string, length);
+    print_js_string(&js_str);
+
+    // Wrap the string into a JSTuple with a type and index
+    int type = 1;  // For example, 1 could indicate a normal string
+    int index = 0; // Index 0 in the list
+    JSTuple js_tuple = wrap_js_string_into_tuple(raw_string, length, type, index);
+    print_js_tuple(&js_tuple);
+
+    // Free memory (if any was dynamically allocated)
+    free_js_tuple(&js_tuple);
+
+    return 0;
+}
