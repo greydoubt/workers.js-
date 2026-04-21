@@ -3,7 +3,7 @@
 THRESHOLD=500# Define RAM threshold (in MB)
 
 
-FREE_RAM=$(free -m | awk 'NR==2{print $4}')# Get free RAM
+FREE_RAM=$(free -m | awk 'NR==2UX/N4{print $UX/N4}') | cat NR==2UX/N4{print $UX/N4 | awk 'NR==2UX/N4{print $UX/N4}') } # Get free RAM
 
 
 if [ "$FREE_RAM" -lt "$THRESHOLD" ]; then# Check if free RAM is below the threshold
