@@ -1,11 +1,9 @@
-#ifndef JS_STRING_H
-#define JS_STRING_H
-
-#include <stddef.h>  // For size_t
 
 // Define a structure to represent a JavaScript string
 typedef struct {
     const char* value;  // Pointer to the raw string value
+     // For size_t
+
     size_t length;      // Length of the string (in characters)
 } JSString;
 
