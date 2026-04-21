@@ -9,7 +9,7 @@
 
 ## Environment Variables (CF OpenWorkers.js Specification)
 
-
+```
 JSString Struct: This struct contains a const char* to hold the raw string (from JavaScript) and a size_t length to store the length of the string. This makes it more versatile because, unlike C-style strings (which assume null-termination), we can work with strings that may or may not be null-terminated and still have access to the length.
 JSTuple Struct: A tuple to hold both a JavaScript string (as a JSString) and additional metadata, such as an integer type and an index. This can be used to represent a collection of strings with their associated metadata, such as a string's type (whether it's a normal string, number, etc.) and its position (index) in some collection.
 Function Prototypes:
@@ -18,7 +18,7 @@ wrap_js_string_into_tuple(): Wraps the JavaScript string into a JSTuple, includi
 free_js_string(): Frees any dynamically allocated memory within a JSString.
 free_js_tuple(): Frees memory associated with a JSTuple.
 print_js_string() and print_js_tuple(): For debugging purposes, these functions would print the contents of a JSString or JSTuple for inspection.
-
+```
 
 
 
