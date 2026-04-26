@@ -1,5 +1,8 @@
 // obtain input element through DOM
 
+// This is a non-trivial requirement to implement for user agents, and is thus not a must but a should [RFC2119]. User agents should endeavor to have a File object’s snapshot state set to the state of the underlying storage on disk at the time the reference is taken. If the file is modified on disk following the time a reference has been taken, the File’s snapshot state will differ from the state of the underlying storage. User agents may use modification time stamps and other mechanisms to maintain snapshot state, but this is left as an implementation detail.
+
+
 var file = document.getElementById('file').files[0];
 if(file)
 {
